@@ -1,0 +1,1 @@
+stream().map() lets you convert an object to something else.

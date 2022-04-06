@@ -1,0 +1,1 @@
+Stream.reduce() combine elements of a stream and produces a single value.
