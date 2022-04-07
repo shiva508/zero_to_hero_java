@@ -1,6 +1,6 @@
 package com.pool.l0.core.arrays.book;
 
-import com.pool.l0.book.basic.BankAccount;
+import com.pool.l0.core.basic.BankAccount;
 
 public class BankSimulator {
 	public static void main(String[] args) {
