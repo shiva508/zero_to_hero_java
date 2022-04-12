@@ -12,3 +12,34 @@
 -->ConcurrentLinkedQueue is an unbounded thread-safe Queue based on linked nodes.
 -->All Queues supports insertion at the tail of the queue and removal at the head of the queue, except Deques.
 -->Deques are queues but they support element insertion and removal at both ends.
+
+-->add method returns true or false if size exceds throws exception
+-->The add() and offer() methods differ in how the behave if the Queue is full, so no more elements can be added. 
+-->The add() method throws an exception in that case, whereas the offer() method just returns false. 
+
+Implementation ways:
+
+1. PriorityQueue: 
+-->PriorityQueue class which is implemented in the collection framework provides us a way
+to process the objects based on the priority. It is known that a queue follows First-In-First-Out 
+algorithm, but sometimes the elements of the queue are needed to be processed according to the
+priority, that’s when the PriorityQueue comes into play. Let’s see how to create a queue object using 
+this class.
+
+2. LinkedList: 
+-->LinkedList is a class which is implemented in the collection framework which inherently 
+implements the linked list data structure. It is a linear data structure where the elements are not stored 
+in contiguous locations and every element is a separate object with a data part and address part. 
+-->The elements are linked using pointers and addresses. Each element is known as a node. 
+-->Due to the dynamicity and ease of insertions and deletions, they are preferred over the arrays or queues.
+
+3. PriorityBlockingQueue: 
+-->It is to be noted that both the implementations, the PriorityQueue and LinkedList are not thread-safe. 
+-->PriorityBlockingQueue is one alternative implementation if thread-safe implementation is needed. 
+-->PriorityBlockingQueue is an unbounded blocking queue that uses the same ordering rules as class PriorityQueue 
+and supplies blocking retrieval operations. 
+-->Since it is unbounded, adding elements may sometimes fail due to resource exhaustion resulting in OutOfMemoryError. 
+
+Methods:
+-->peek():prints the top element of the queue
+-->poll():Retrieves and removes the head of this queue, or returns null if this queue is empty.
