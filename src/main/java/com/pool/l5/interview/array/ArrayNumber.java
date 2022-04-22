@@ -12,16 +12,45 @@ public class ArrayNumber {
 
 		Predicate<Integer> predicate = num -> num % 10 == 0;
 		List<Integer> inputDataList = Arrays.stream(inputData).boxed().collect(Collectors.toList());
+		int nonTenDivLenght = 0;
+		int tenDivLength = 0;
 
 		for (int i = 0; i < inputData.length; i++) {
+			if (inputData[i] % 10 == 0) {
+				tenDivLength++;
+			} else {
+				nonTenDivLenght++;
+			}
+		}
+		System.out.println(tenDivLength);
+		System.out.println(nonTenDivLenght);
+
+		int[] tenDivArray = new int[tenDivLength];
+		int[] nonTenDivArray = new int[nonTenDivLenght];
+		int[] finalArray = new int[inputData.length];
+
+		for (int i = 0; i < inputData.length; i++) {
+			if (nonTenDivArray.length < i) {
+
+			} else {
+
+			}
+
+			if (inputData[i] % 10 == 0) {
+				int a = inputData[i];
+				int b = inputData[i + 1];
+				inputData[i] = b;
+				inputData[i + 1] = a;
+
+			}
 
 		}
 
-		beforeJava8(predicate, inputDataList);
+		// beforeJava8(predicate, inputDataList);
 
-		usingPartionedBy(predicate, inputDataList);
+		// usingPartionedBy(predicate, inputDataList);
 
-		groupingBy(inputDataList);
+		// groupingBy(inputDataList);
 
 	}
 

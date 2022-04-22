@@ -8,6 +8,7 @@ public class GenericWildCards {
 		List<Integer> integers = new ArrayList<>();
 		printWildData(integers);
 		List<Cat> cats = new ArrayList<>();
+		printWildData(cats);
 	}
 
 	public static void printData(List<Object> data) {
