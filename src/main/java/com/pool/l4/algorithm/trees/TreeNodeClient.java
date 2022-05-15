@@ -7,7 +7,7 @@ public class TreeNodeClient {
 						new TreeNode().setData("Kotaiah")
 								.setChild(new TreeNode().setData("Mattaiah").setHasChild(true)
 										.setChild(new TreeNode().setHasChild(false).setData("Satish")))
-								.setHasChild(true));
+								.setHasChild(false));
 		printTree(familyTree, 4);
 	}
 
