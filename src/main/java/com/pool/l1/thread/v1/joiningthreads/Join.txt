@@ -1,0 +1,4 @@
+It make main thread to hold for all other threads to executed
+
+-->For time consuming add time willing to wait in join method 
+-->main thread still running so need to handle using interrupts or making them as deaman
