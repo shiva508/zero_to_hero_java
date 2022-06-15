@@ -3,7 +3,7 @@ package com.pool.l1.thread.v2.synchronizedcollection;
 import java.util.List;
 import java.util.Random;
 
-public class ReadTask implements Runnable{
+public class ReadTask implements Runnable {
 	private List<Integer> list;
 	private Random random;
 
