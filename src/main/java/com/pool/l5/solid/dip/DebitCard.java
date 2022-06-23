@@ -1,6 +1,9 @@
 package com.pool.l5.solid.dip;
 
-public class DebitCard {
+import com.pool.l5.solid.dip.solution.BankCard;
+
+public class DebitCard implements BankCard {
+	@Override
 	public void buyItem(double ammount) {
 		System.out.println("Buy using credit card");
 	}
