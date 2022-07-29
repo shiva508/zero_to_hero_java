@@ -11,13 +11,17 @@ public class SbiAtm implements MoneyTransaction {
 	@Override
 	public void enterAmout() {
 		System.out.println("Enter Amount");
-
 	}
 
 	@Override
 	public int withdrowAmount() {
 		System.out.println("Amount:" + 500);
 		return 500;
+	}
+
+	@Override
+	public int withdrowAmount(String playername) {
+		return 50;
 	}
 
 }
