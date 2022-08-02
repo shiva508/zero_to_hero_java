@@ -15,7 +15,6 @@ public class StudentLibSet {
 			names.add("A"+i);
 		}
 		
-		
 		for (String name : names) {
 			System.out.println(name);
 		}

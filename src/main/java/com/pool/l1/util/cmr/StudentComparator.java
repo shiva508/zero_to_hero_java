@@ -2,14 +2,12 @@ package com.pool.l1.util.cmr;
 
 import java.util.Objects;
 
-public class Student implements Comparable<Student> {
+public class StudentComparator{
 	private String studentName;
 
 	private String dept;
-	
-	private Integer totalMarks;
 
-	public Student(String studentName, String dept) {
+	public StudentComparator(String studentName, String dept) {
 		super();
 		this.studentName = studentName;
 		this.dept = dept;
@@ -49,13 +47,8 @@ public class Student implements Comparable<Student> {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Student other = (Student) obj;
+		StudentComparator other = (StudentComparator) obj;
 		return Objects.equals(dept, other.dept) && Objects.equals(studentName, other.studentName);
-	}
-
-	@Override
-	public int compareTo(Student o) {
-		return this.getDept().compareTo(o.getDept());
 	}
 
 }
