@@ -8,18 +8,19 @@ import com.pool.l1.util.cmr.StudentComparator;
 
 public class ComparatorClient {
 	public static void main(String[] args) {
-		List<StudentComparator> StudentComparatorsRecords = new ArrayList<>();
-		StudentComparatorsRecords.add(new StudentComparator("Ravi", "Mech"));
-		StudentComparatorsRecords.add(new StudentComparator("Shiva", "ECE"));
-		StudentComparatorsRecords.add(new StudentComparator("Satish", "Mech"));
-		StudentComparatorsRecords.add(new StudentComparator("Anish", "CSE"));
-		StudentComparatorsRecords.add(new StudentComparator("Dawan", "IT"));
-		StudentComparatorsRecords.add(new StudentComparator("Sachin", "ECE"));
-		StudentComparatorsRecords.add(new StudentComparator("Ganguly", "IT"));
+		List<StudentComparator> studentComparatorsRecords = new ArrayList<>();
+		studentComparatorsRecords.add(new StudentComparator("Ravi", "Mech",20));
+		studentComparatorsRecords.add(new StudentComparator("Shiva", "ECE",10));
+		studentComparatorsRecords.add(new StudentComparator("Satish", "Mech",30));
+		studentComparatorsRecords.add(new StudentComparator("Anish", "CSE",90));
+		studentComparatorsRecords.add(new StudentComparator("Dawan", "IT",55));
+		studentComparatorsRecords.add(new StudentComparator("Sachin", "ECE",20));
+		studentComparatorsRecords.add(new StudentComparator("Ganguly", "IT",50));
 		//Collections.sort(StudentComparatorsRecords,new CustomComp());
 		//Collections.sort(StudentComparatorsRecords,CustomCompOtherway.nameComparator);
-		Collections.sort(StudentComparatorsRecords,CustomCompOtherway.depotComparator);
-		for (StudentComparator studentComparator : StudentComparatorsRecords) {
+		Collections.sort(studentComparatorsRecords,CustomCompOtherway.depotComparator);
+		studentComparatorsRecords.add(5,new StudentComparator("Sachin", "IT",90));
+		for (StudentComparator studentComparator : studentComparatorsRecords) {
 			System.out.println(studentComparator);
 		}
 	}

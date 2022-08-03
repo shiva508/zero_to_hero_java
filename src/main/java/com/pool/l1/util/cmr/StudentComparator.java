@@ -6,11 +6,14 @@ public class StudentComparator{
 	private String studentName;
 
 	private String dept;
+	
+	private Integer marks;
 
-	public StudentComparator(String studentName, String dept) {
+	public StudentComparator(String studentName, String dept, Integer marks) {
 		super();
 		this.studentName = studentName;
 		this.dept = dept;
+		this.marks = marks;
 	}
 
 	public String getStudentName() {
@@ -29,9 +32,17 @@ public class StudentComparator{
 		this.dept = dept;
 	}
 
+	public Integer getMarks() {
+		return marks;
+	}
+
+	public void setMarks(Integer marks) {
+		this.marks = marks;
+	}
+
 	@Override
 	public String toString() {
-		return "Student [studentName=" + studentName + ", dept=" + dept + "]";
+		return "StudentComparator [studentName=" + studentName + ", dept=" + dept + ", marks=" + marks + "]";
 	}
 
 	@Override
