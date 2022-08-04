@@ -1,0 +1,3 @@
+hashcode()-->it will return address of class/object
+toString()-->it will displays to contents of object
+getClass()--->using this method we can get details of the class

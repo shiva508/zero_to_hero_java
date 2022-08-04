@@ -28,25 +28,6 @@ public class StudentLibMap {
 		 */
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 	private static Map<String, Integer> extracted() {
 		Map<String, Integer> map = new HashMap<>();
 		map.put("Ravi", 100);
