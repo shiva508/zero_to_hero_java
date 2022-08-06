@@ -10,6 +10,31 @@ public class ObjectClassClient {
 		//teaGetClassMethod();
 		//toStringFunctionality();
 		//hashcodeFunctionality(object);
+		//equalsMethodFunctionality();
+		
+		try {
+			Tea masalaTea = new Tea("Masala", 10.40, new Sugar(12));
+			Tea clonedMasalaTea=(Tea)masalaTea.clone();
+			masalaTea.setRate(1222.00);
+			masalaTea.getSugar().setNoOfTeaSpoons(4);
+			System.out.println("Original object:"+masalaTea);
+			System.out.println("Cloned object:"+clonedMasalaTea);
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	private static void equalsMethodFunctionality() {
+		Tea masalaTea = new Tea("Masala", 10.40);//X
+		Tea masalaTea1 = new Tea("Masala", 10.40);//Y
+		Tea masalaTea2 = masalaTea;//X
+		boolean isEquals=masalaTea.equals(masalaTea1);
+		System.out.println("isEquals:"+isEquals);
+		isEquals=masalaTea2.equals(masalaTea);
+		System.out.println("isEquals:"+isEquals);
+		System.out.println(masalaTea.getRate().equals(masalaTea1.getRate()));
 	}
 
 	private static void teaGetClassMethod() {

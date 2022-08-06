@@ -9,7 +9,7 @@ A).Cloning
 --->If our Employee class won’t implement Cloneable interface, the above program 
 	will throw CloneNotSupportedException runtime exception.
 --->We didn’t make any change in cloneImages properties, but still, they got changed 
-	because both iages and cloneImages variables are referring to the same object.This 
+	because both images and cloneImages variables are referring to the same object.This 
 	is happening because the default Object clone() method creates a shallow copy. 
 	{Format=jpg, Size=508MB, Lcation=India}
 -->cloneImages name:Nithya.jpg: What happened here?We changed the images name but 

@@ -41,8 +41,19 @@ public class ImagesDeepClone implements Cloneable {
 		ImagesDeepClone  clone=(ImagesDeepClone) imageObject;
 		clone.setImageProps(null);
 		Map<String, String> hashMap=new HashMap<>();
-		
-		clone.setImageProps(this.imageProps);
-		return super.clone();
+		this.imageProps.forEach((key,value)->{
+			hashMap.put(key, value);
+		});
+		//clone.setImageProps(hashMap);
+		clone.setImageProps(hashMap);
+		//return super.clone();
+		return clone;
 	}
+
+	@Override
+	public String toString() {
+		return "ImagesDeepClone [imageId=" + imageId + ", imageName=" + imageName + ", imageProps=" + imageProps + "]";
+	}
+	
+	
 }

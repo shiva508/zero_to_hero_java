@@ -39,4 +39,9 @@ public class Images implements Cloneable {
 		return super.clone();
 	}
 
+	@Override
+	public String toString() {
+		return "Images [imageId=" + imageId + ", imageName=" + imageName + ", imageProps=" + imageProps + "]";
+	}
+
 }
