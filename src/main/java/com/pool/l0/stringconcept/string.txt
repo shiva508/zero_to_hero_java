@@ -1,0 +1,11 @@
+String is immutable object
+
+
+Steps1:Create class 
+Step2:make all the fields and private and final
+Step3: set values to private and final fields through constructor
+Step: provide getter methods to read the data
+
+
+StringBuilder
+StringBuffer

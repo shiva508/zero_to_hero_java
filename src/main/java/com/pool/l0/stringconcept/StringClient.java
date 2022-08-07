@@ -10,7 +10,82 @@ public class StringClient {
 		// upperAndLowercase();
 		// splitMethod();
 		// eualsAndEqualsIgnore();
+		//immutablity();
+		//cancatinationFunctionality();
+		
+		//stringBuilderFunctionality();
+		stringBufferFunctionality();
+		
+	}
 
+	private static void stringBufferFunctionality() {
+		StringBuffer names=new StringBuffer();
+		names.append("Shiva");
+		System.out.println(names.reverse());
+		names.append("Test").append("TESRSRRSR");
+		System.out.println(names.hashCode());
+		System.out.println(names.toString());
+		names.replace(0, 4, "Ravi");
+		
+		System.out.println(names.hashCode());
+		System.out.println(names.toString());
+		names.delete(10, 12);
+		System.out.println(names.toString());
+		processNames1(names);
+		processNames2(names);
+	}
+
+	private static void processNames1(StringBuffer names) {
+		names.append("TRESES");
+	}
+	private static void processNames2(StringBuffer names) {
+		names.append("TRESES sada");
+	}
+
+	private static void stringBuilderFunctionality() {
+		StringBuilder names=new StringBuilder();
+		names.append("Shiva");
+		System.out.println(names.reverse());
+		names.append("Test").append("TESRSRRSR");
+		System.out.println(names.hashCode());
+		System.out.println(names.toString());
+		names.replace(0, 4, "Ravi");
+		
+		System.out.println(names.hashCode());
+		System.out.println(names.toString());
+		names.delete(10, 12);
+		System.out.println(names.toString());
+	}
+
+	private static void cancatinationFunctionality() {
+		String playerName = "Sachin";
+		String fullName=playerName.concat(" Tendulkar");
+		playerName=playerName.concat(" Tendulkar");
+		System.out.println(playerName);
+		System.out.println(fullName);
+	}
+
+	private static void immutablity() {
+		String playerName = "Sachin";
+		System.out.println("Before update:" + playerName.hashCode());
+
+		playerName = "Sachin Tendulkar";
+		System.out.println("After update:" + playerName.hashCode());
+
+		UserProfile userProfile = new UserProfile("Player1", "Sachine");
+
+		System.out.println("userProfile.hashcode(): "+userProfile.hashCode());
+		System.out.println("Playedid:"+userProfile.getUserId()+",Username:"+userProfile.getUserName());
+		userProfile=new UserProfile("Player2", "Sachine1");
+		System.out.println("userProfile.hashcode(): "+userProfile.hashCode());
+		System.out.println("Playedid:"+userProfile.getUserId()+",Username:"+userProfile.getUserName());
+		
+		String fullname = "DaSari ShIva";
+		System.out.println("Original:" + fullname);
+		System.out.println("Original.hashCode() :" + fullname.hashCode());
+		System.out.println("Original:" + fullname);
+		System.out.println("Lowercase:" + fullname.toLowerCase().hashCode());
+		System.out.println("Uppercase:" + fullname.toUpperCase().hashCode());
 	}
 
 	private static void eualsAndEqualsIgnore() {
