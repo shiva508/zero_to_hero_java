@@ -1,5 +1,6 @@
 package com.pool.l1.util.cmr.map;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -14,26 +15,33 @@ public class StudentLibMap {
 		map.put("W", 12);
 		map.put("C", 24);
 		map.forEach((key,value)->System.out.println("Key:"+key+",Value:"+value));
-		/*for (Map.Entry<String, Integer> names : map.entrySet()) {
+		Integer sum=map.entrySet().stream().map(Map.Entry::getValue).reduce(0,(a,b)->a+b);
+		int sum1=0;
+		
+		System.out.println(sum);
+		for (Map.Entry<String, Integer> names : map.entrySet()) {
 			System.out.println("Key:"+names.getKey()+",Value:"+names.getValue());
-		}*/
+			sum1+=names.getValue();
+		}
+		System.out.println(sum1);
 	}
+
 	private static void basicFunctionality() {
 		Map<String, Integer> map = extracted();
-		System.out.println("Ravi:"+map.get("Ravi"));
-		System.out.println("Shiva:"+map.get("Shiva"));
-		
-		System.out.println("Satish:"+map.get("Satish"));
-		
-		if(map.containsKey("Satish")) {
+		System.out.println("Ravi:" + map.get("Ravi"));
+		System.out.println("Shiva:" + map.get("Shiva"));
+
+		System.out.println("Satish:" + map.get("Satish"));
+
+		if (map.containsKey("Satish")) {
 			System.out.println("Satish is available in map");
-		}else {
+		} else {
 			System.out.println("Satish is Not available in map");
 		}
-		
-		if(map.containsValue(100)) {
+
+		if (map.containsValue(100)) {
 			System.out.println("100 is available in map");
-		}else {
+		} else {
 			System.out.println("100 is Not available in map");
 		}
 		/*
@@ -41,6 +49,7 @@ public class StudentLibMap {
 		 * System.out.println(playerDetaisl); }
 		 */
 	}
+
 	private static Map<String, Integer> extracted() {
 		Map<String, Integer> map = new HashMap<>();
 		map.put("Ravi", 100);
