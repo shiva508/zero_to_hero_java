@@ -1,0 +1,2 @@
+There are 2 ways 
+1.Using Thread class: extending our class with thread class and overrid run method and keep cpu consuming task inside run method
