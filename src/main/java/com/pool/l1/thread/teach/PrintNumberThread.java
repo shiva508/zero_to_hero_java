@@ -1,6 +1,6 @@
 package com.pool.l1.thread.teach;
 
-public class PrintNumberThread extends Thread {
+public class PrintNumberThread extends Thread{
 	private String squalnceName;
 	
 	public PrintNumberThread(String squalnceName) {
