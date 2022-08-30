@@ -12,7 +12,7 @@ public class VectorExample {
 	/**
 	 * @param vector
 	 */
-	public static void processVectorAdd(Vector vector) {
+	public static void processVectorAdd(Vector<Object> vector) {
 		vector.add(1);
 		vector.add("a");
 		vector.addElement("Shiav");

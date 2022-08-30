@@ -1,4 +1,4 @@
--->java.util.Queue interface is a subtype of java.util.Collection interface.
+-->java.util.Queue interface is a sub-type of java.util.Collection interface.
 -->Just like a real-world queue (for instance, in a bank or at ATM), Queue inserts elements at the end of the queue and removes from the beginning of the queue.
 -->Java Queue represents an ordered list of elements.
 -->Java Queue follows FIFO order to insert and remove it’s elements. FIFO stands for First In First Out.

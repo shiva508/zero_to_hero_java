@@ -1,0 +1,17 @@
+@Java List
+-->In Java, the List interface is an ordered collection that allows us to store and access elements sequentially. It extends the Collection interface.
+
+@Classes that Implement List
+-->Since List is an interface, we cannot create objects from it.
+-->In order to use functionalities of the List interface, we can use these classes:
+
+ArrayList
+LinkedList
+Vector
+Stack
+
+@Java List vs. Set
+-->Both the List interface and the Set interface inherits the Collection interface. However, there exists some difference between them.
+
+-->Lists can include duplicate elements. However, sets cannot have duplicate elements.
+-->Elements in lists are stored in some order. However, elements in sets are stored in groups like sets in mathematics.

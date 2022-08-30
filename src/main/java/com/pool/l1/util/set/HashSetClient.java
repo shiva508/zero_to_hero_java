@@ -1,4 +1,4 @@
-package com.pool.l1.util.SET;
+package com.pool.l1.util.set;
 
 import java.util.HashSet;
 

@@ -1,4 +1,4 @@
-package com.pool.l1.util.SET;
+package com.pool.l1.util.set;
 
 public class BookComparable implements Comparable<BookComparable> {
 	private String bookName;

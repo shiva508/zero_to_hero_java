@@ -1,4 +1,4 @@
-package com.pool.l1.util.LIST;
+package com.pool.l1.util.list;
 
 import java.util.Vector;
 

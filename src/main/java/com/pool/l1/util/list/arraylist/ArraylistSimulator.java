@@ -17,7 +17,7 @@ public class ArraylistSimulator {
 
 	private static void synchronizedArrayList() {
 		ArrayList<String>  list=new ArrayList<>();
-		List synchronizedArrayList=Collections.synchronizedList(list);
+		List<String> synchronizedArrayList=Collections.synchronizedList(list);
 		
 	}
 
