@@ -1,4 +1,4 @@
-package com.pool.l0.iostreams.inputstream;
+package com.pool.l0.iostreams.bytestream.inputstream;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

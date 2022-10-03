@@ -1,5 +1,9 @@
 package com.pool.l0.core.arrays;
 
+import java.nio.charset.Charset;
+
+import org.apache.commons.codec.Charsets;
+
 public class ClassObjectsforArrays {
 	public static void main(String[] args) {
 		int intArray[] = new int[2];
@@ -14,5 +18,11 @@ public class ClassObjectsforArrays {
 		System.out.println(shortArray.getClass().getSuperclass());
 		System.out.println(stringArray.getClass());
 		System.out.println(stringArray.getClass().getSuperclass());
+		
+		String name="Shiva";
+		byte[] nameByte=name.getBytes(Charsets.UTF_8);
+		System.out.println(nameByte);
+		String ddd=new String(nameByte, Charsets.UTF_8);
+		System.out.println(ddd );
 	}
 }
